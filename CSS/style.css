@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header{
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.container{
+    padding: 40px;
+}
+
+.intro{
+    margin-bottom: 30px;
+}
+
+.intro h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.intro p{
+    font-size: 18px;
+    color: #555;
+}
+
+button{
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tablero{
+    display: flex;
+    gap: 20px;
+}
+
+.columna{
+    background-color: white;
+    width: 33%;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 200px;
+}
+
+.columna h3{
+    margin-top: 0;
+}
+
+.tarea{
+    background-color: #eeeeee;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.prioridad-alta{
+    border-top: 8px solid #e74c3c;
+}
+
+.prioridad-media{
+    border-top: 8px solid #f39c12;
+}
+
+.prioridad-baja{
+    border-top: 8px solid #27ae60;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+.info{
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.empty{
+    text-align: center;
+    color: #777;
+    margin-top: 60px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px; 
+}
+
+.empty h2{
+    margin-bottom: 10px;
+}
+
+.empty p{
+    color: #666;
+    margin-bottom: 20px;
+}
