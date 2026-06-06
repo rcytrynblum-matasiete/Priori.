@@ -1,1 +1,378 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+
+
+.top-header {
+    display: flex;
+    width: 100%;
+    height: 85px;
+    background-color: #23d8c8;
+}
+
+.logo {
+    width: 150px;
+    background-color: #23d8c8;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #6c63ff;
+}
+
+.navbar-priori {
+    flex: 1;
+    background-color: #23d8c8;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-inner {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.nav-inner a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 18px 70px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-inner a.active {
+  background-color: #d9d9d9;
+}
+
+
+.boton-priori {
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 18px;
+}
+
+.boton-priori:hover {
+  background-color: #cfcfcf;
+  color: black;
+}
+
+.boton-chico {
+  font-size: 14px;
+  padding: 10px 40px;
+}
+
+.boton-agregar {
+    margin-top: 35px;
+    font-size: 14px;
+    padding: 12px 18px;
+}
+
+.boton-nota {
+  margin-top: 35px;
+}
+
+
+
+.inicio {
+  text-align: center;
+  padding-top: 110px;
+}
+
+.inicio h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.texto-inicio {
+  font-size: 24px;
+  max-width: 700px;
+  margin: 80px auto 130px;
+}
+
+
+
+.pagina-tareas {
+  text-align: center;
+  padding-top: 45px;
+}
+
+.pagina-tareas h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.pagina-tareas > p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.tareas-contenedor {
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-x: hidden;
+}
+
+.tarjeta-gris {
+  background-color: #d9d9d9;
+  padding: 20px;
+  min-height: 230px;
+}
+
+.tarjeta-blanca {
+  background-color: white;
+  min-height: 190px;
+  padding: 20px;
+  text-align: left;
+}
+
+.tarjeta-blanca h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-blanca p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+
+
+.pagina-calendario {
+  padding-top: 60px;
+}
+
+.calendario-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.calendario-box {
+  background-color: #d9d9d9;
+  width: 620px;
+  padding: 10px 18px 35px;
+}
+
+.mes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  margin-bottom: 20px;
+}
+
+.mes h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.mes span {
+  font-size: 32px;
+}
+
+.grilla-calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.grilla-calendario div {
+  background-color: white;
+  height: 70px;
+}
+
+
+
+
+.pagina-notas {
+  padding: 45px 30px;
+}
+
+.notas-titulo {
+  display: flex;
+  align-items: flex-start;
+  gap: 180px;
+}
+
+.notas-titulo h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.notas-titulo p {
+  font-size: 18px;
+  margin-left: 55px;
+  margin-top: 25px;
+}
+
+.notas-box {
+  background-color: #d9d9d9;
+  width: 620px;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.nota {
+  background-color: white;
+  padding: 16px;
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .top-header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo {
+    width: 100%;
+    height: 68px;
+    justify-content: center;
+    padding-left: 0;
+    background-color: #23d8c8;
+  }
+
+  .logo h1 {
+    font-size: 32px;
+  }
+
+  .navbar-priori {
+    padding-top: 0;
+    background-color: white;
+  }
+
+  .nav-inner {
+    height: 42px;
+  }
+
+  .nav-inner a {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+
+  .inicio {
+    padding: 60px 10px;
+  }
+
+  .inicio h2 {
+    font-size: 22px;
+  }
+
+  .texto-inicio {
+    font-size: 16px;
+    margin: 80px auto 150px;
+  }
+
+  .pagina-tareas {
+    padding: 45px 5px;
+  }
+
+  .pagina-tareas h2 {
+    font-size: 22px;
+  }
+
+  .pagina-tareas > p {
+    font-size: 14px;
+  }
+
+  .tareas-contenedor {
+    margin-top: 35px;
+  }
+
+  .tarjeta-gris {
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .tarjeta-blanca {
+    min-height: 110px;
+    text-align: center;
+  }
+
+  .tarjeta-blanca h3 {
+    font-size: 18px;
+  }
+
+  .tarjeta-blanca p {
+    font-size: 15px;
+  }
+
+  .calendario-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 130px;
+  }
+
+  .calendario-box {
+    width: 92%;
+    padding: 12px;
+  }
+
+  .grilla-calendario div {
+    height: 38px;
+  }
+
+  .mes {
+    gap: 35px;
+  }
+
+  .mes h2 {
+    font-size: 20px;
+  }
+
+  .pagina-notas {
+    padding: 45px 5px;
+  }
+
+  .notas-titulo {
+    display: block;
+  }
+
+  .notas-titulo p {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .notas-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nota {
+    font-size: 14px;
+    padding: 14px;
+  }
+}
