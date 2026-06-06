@@ -11,43 +11,44 @@
 <body>
     
     <header class="top-header">
-        <div class="logo">
-            <h1>Priori <span>.</span></h1>
+    <div class="logo">
+        <h1>Priori<span>.</span></h1>
+    </div>
+        
+    <nav class="navbar-priori">
+        <div class="nav-inner">
+            <a href="index.html">Inicio</a>
+            <a href="tareas.html">Tareas</a>
+            <a href="calendario.html" class="active">Calendario</a>
+            <a href="notas.html">Notas</a>
         </div>
+    </nav>
+</header>
 
-        <nav class="navbar-priori">
-            <div class="nav-inner">
-                <a href="index.html">Inicio</a>
-                <a href="tareas.html">Tareas</a>
-                <a href="calendario.html" class="active">Calendario</a>
-                <a href="">Notas</a>
-            </div>
-        </nav>
-    </header>
+<main class="pagina-calendario">
+  <section class="calendario-layout">
 
-    <section class="pantalla">
-        <h2>Calendario</h2>
+    <div class="calendario-box">
+      <div class="mes">
+        <span>←</span>
+        <h2>Junio 2026</h2>
+        <span>→</span>
+      </div>
 
-        <div class="calendario-box">
-            <div class="mes">
-                <span>←</span>
-                <h3>Junio 2026</h3>
-                <span>→</span>
-            </div>
+      <div class="grilla-calendario">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+    </div>
 
-            <div class="grilla-calendario">
+    <button class="boton-priori boton-agregar">Agregar</button>
 
-                <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-            </div>
-        </div>
+  </section>
+</main>
 
-        <button class="btn boton-priori mt-4">Agregar</button>
-    </section>
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
