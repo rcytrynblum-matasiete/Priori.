@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priori. / Agregar evento</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top-header">
+  <div class="logo">
+    <h1>Priori<span>.</span></h1>
+  </div>
+
+  <nav class="navbar-priori">
+    <div class="nav-inner">
+      <a href="index.html">Inicio</a>
+      <a href="tareas.html">Tareas</a>
+      <a href="calendario.html" class="active">Calendario</a>
+      <a href="notas.html">Notas</a>
+    </div>
+  </nav>
+</header>
+
+<main class="pagina-formulario">
+  <section class="formulario-box">
+    <h2>Agregar evento</h2>
+
+    <label>Tipo de evento</label>
+    <select>
+      <option>Estudio</option>
+      <option>Tarea</option>
+      <option>Examen</option>
+    </select>
+
+    <label>Nombre del evento</label>
+    <input type="text" placeholder="Ej: Parcial de matemática">
+
+    <label>Fecha</label>
+    <input type="date">
+
+    <label>Recordatorio</label>
+    <select>
+      <option>Sin recordatorio</option>
+      <option>1 día antes</option>
+      <option>3 días antes</option>
+      <option>1 semana antes</option>
+    </select>
+
+    <a href="calendario.html" class="boton-priori">Guardar</a>
+  </section>
+</main>
+
+</body>
+</html>
